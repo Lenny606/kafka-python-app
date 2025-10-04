@@ -24,8 +24,8 @@ services:
       # defines ports for clients with plaintext protocol + controller to managing
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
       # explicitly defines ports for clients (+ controller)
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://0.0.0.0:9092
-      KAFKA_ADVERTISED_CONTROLLERS: CONTROLLER
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
 
       KAFKA_LOG_DIRS: /tmp/kraft-combined-logs
 
